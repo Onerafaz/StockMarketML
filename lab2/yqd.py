@@ -26,10 +26,10 @@ Created on Thu May 18 22:58:12 2017
 """
 
 # Use six to import urllib so it is working for Python2/3
-from six.moves import urllib
+# from six.moves import urllib
 # If you don't want to use six, please comment out the line above
 # and use the line below instead (for Python3 only).
-#import urllib.request, urllib.parse, urllib.error
+import urllib.request, urllib.parse, urllib.error
 
 import time
 
@@ -63,7 +63,7 @@ def _get_cookie_crumb():
 	'''
 
 	# Perform a Yahoo financial lookup on SP500
-	req = urllib.request.Request('https://finance.yahoo.com/quote/^GSPC', headers=_headers)
+	req = urllib.request.Request('https://finance.yahoo.com/quote/^GSPC', headers=_headers, unverifiable=True)
 	f = urllib.request.urlopen(req)
 	alines = f.read().decode('utf-8')
 
@@ -117,7 +117,7 @@ def load_yahoo_quote(ticker, begindate, enddate, info = 'quote'):
 	params = urllib.parse.urlencode(param)
 	url = 'https://query1.finance.yahoo.com/v7/finance/download/{}?{}'.format(ticker, params)
 	#print(url)
-	req = urllib.request.Request(url, headers=_headers)
+	req = urllib.request.Request(url, headers=_headers, unverifiable=True)
 
 	# Perform the query
 	# There is no need to enter the cookie here, as it is automatically handled by opener

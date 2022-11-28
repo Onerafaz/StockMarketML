@@ -50,7 +50,7 @@ import re
 import matplotlib.pyplot as plt
 from tqdm import tqdm_notebook
 
-from keras.optimizers import RMSprop, Adam, Nadam
+from tensorflow.keras.optimizers import RMSprop, Adam, Nadam
 from keras.models import Sequential, load_model, Model
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences

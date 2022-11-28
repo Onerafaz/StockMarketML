@@ -1,0 +1,44 @@
+{
+    "GOOG": {
+        "reuters": {},
+        "seekingalpha": {},
+        "fool": {},
+        "wsj": {},
+        "thestreet": {}
+    },
+    "AAPL": {
+        "reuters": {},
+        "seekingalpha": {},
+        "fool": {},
+        "wsj": {},
+        "thestreet": {}
+    },
+    "MSFT": {
+        "reuters": {},
+        "seekingalpha": {},
+        "fool": {},
+        "wsj": {},
+        "thestreet": {}
+    },
+    "AMD": {
+        "reuters": {},
+        "seekingalpha": {},
+        "fool": {},
+        "wsj": {},
+        "thestreet": {}
+    },
+    "AMZN": {
+        "reuters": {},
+        "seekingalpha": {},
+        "fool": {},
+        "wsj": {},
+        "thestreet": {}
+    },
+    "INTC": {
+        "reuters": {},
+        "seekingalpha": {},
+        "fool": {},
+        "wsj": {},
+        "thestreet": {}
+    }
+}

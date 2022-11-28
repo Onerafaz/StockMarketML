@@ -5,7 +5,7 @@
 
 # Setup (Imports)
 
-from gensim.models.doc2vec import LabeledSentence
+# from gensim.models.doc2vec import LabeledSentence
 from gensim.models import Doc2Vec
 
 from datetime import datetime, timedelta
